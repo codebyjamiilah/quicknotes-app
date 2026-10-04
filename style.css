@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f2f5;
+  color: #222;
+}
+
+header {
+  background-color: #2a6f97;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0 0 5px;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #ddd;
+}
+
+/* Form */
+#note-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#note-input {
+  flex: 1;
+}
+
+input, select, button {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+#search-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #2a6f97;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b4965;
+}
+
+#error-message {
+  color: red;
+  min-height: 1.2em;
+}
+
+/* Note cards */
+#notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.note {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-left: 6px solid #999;
+  border-radius: 8px;
+  margin: 10px 0;
+  background-color: #fafafa;
+}
+
+.note p {
+  margin: 0 0 6px;
+  word-wrap: break-word;
+}
+
+.note-meta {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.note button {
+  margin-top: 8px;
+  background-color: #b23a48;
+}
+
+.note button:hover {
+  background-color: #7f1d2b;
+}
+
+.category-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background-color: #e5e5e5;
+  margin-right: 8px;
+}
+
+.category-personal {
+  border-left-color: teal;
+}
+
+.category-work {
+  border-left-color: darkred;
+}
+
+.category-study {
+  border-left-color: royalblue;
+}
+
+#clear-all {
+  background-color: #6c757d;
+}
+
+.empty-message {
+  color: #666;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  #note-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
